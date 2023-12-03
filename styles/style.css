@@ -106,6 +106,17 @@ a {
     font-size: 0.9rem;
 }
 
+.pre-title::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background: var(--lineColor);
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+}
+
 /* Layouts */
 .grid-3 {
     display: grid;
