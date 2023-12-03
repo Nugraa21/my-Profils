@@ -1,0 +1,662 @@
+:root {
+    --1:#47CAAA;
+    --2:#63BCC9;
+    --3:#CDB3D4;
+    --4:#E7B7CB;
+    --5:#FFBE88;
+
+    --5:#E63946;
+    --5:#F1FAEE;
+    --5:#A8DADC;
+    --5:#457B9D;
+    --5:#1D3557;
+
+
+    --rimaryTextColor: #A8DADC;
+    /* Untuk title atau judul */
+    --secondaryTextColor: #656d72;
+    /* Untuk text biasa seperti paragraph contohnya */
+
+    --borderColor: #005397;
+    --lineColor: #008cff;
+    /* untuk line di pre-title */
+
+    --primaryBackgroundColor: #84c8dd;
+    --secondaryBackgroundColor:#9fc7ff;
+    --border-bottom: 2px solid#000000;
+        --thirdBackgroundColor:#d7edff;
+
+    --primaryIconColor: rgb(255, 238, 0);
+    --primaryIconColorHover: #E7B7CB;
+
+    --sectionPadding: 6rem 0;
+    --itemBorderRadius: 0.7rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}    
+
+body {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: #9fc7ff;
+    /* overflow: hidden; */
+    /* min-height: 200000px; */
+}    
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+header{
+    background-image: url('../media/img/bg.png');
+    background-size:cover ;
+    /* position: fixed; */
+    width: 100%;
+    height: 100%;
+    /* z-index: -100; */
+    /* position: absolute; */
+}
+
+/* Mav */
+.contak{
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem;
+    margin: 0;
+    background-color: #FFBE88;
+    color: #000000;
+    font-size: 0.9rem;
+
+}
+.contak-1{
+    width: 18rem;
+}
+.contak-2{
+    width: 13rem;
+}
+.contak-3{
+    width: 9rem;
+}
+.contak-3 a{
+    color: white;
+}
+.contak-3 a:hover{
+    color: rgb(0, 174, 255);
+    
+}
+/* nav atas  */
+.navbar {
+    max-width: 65rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.logo-navbar {
+    display: flex;
+    align-items: center;
+}
+nav {
+    position: sticky;
+    top: 0px;
+    background-color: #457B9D;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.301);
+}
+.log-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 3rem;
+}
+
+.logo span {
+    font-weight: 700;
+    color: #ffe600;
+}
+
+.nav-links>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link>a {
+    line-height: 3rem;
+    padding: 1rem;
+    /* background-color: #ff0000; */
+    color: #fff;
+    padding: 0 .8rem;
+    letter-spacing: 1px;
+    font-size: .95rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .5s;
+}
+.nav-link>a>i {
+    margin-left: .2rem;
+}
+
+.nav-link:hover>a {
+   
+/* transform: translateY(50px); */ /* animasi turun dari atas */
+    transform: translate(-10%, -10%) scale(1);/* animasi dari dalam keluar */
+    background-color: #ffffff;
+    color: #457B9D;
+    border-radius: 0.5rem;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 10rem;
+    transform: translateY(10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: .2s;
+        background-color: white;
+            border-radius: 0.5rem;
+    
+}
+
+.dropdown ul {
+    position: relative;
+        background-color: white;
+            border-radius: 0.5rem;
+    
+}
+
+.dropdown-link>a {
+    display: flex;
+    color: #457B9D;
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    align-items: center;
+    justify-content: space-between;
+    transition: .3s;
+    
+}
+
+.dropdown-link:hover>a {
+    transform: translate(2%, -10%) scale(1);/* animasi dari dalam keluar */
+    background-color: #457B9D;
+    color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+}
+
+/* .dropdown-link:not(:nth-last-child(2)) {
+    border-bottom: 1px solid #efefef;
+} */
+
+.dropdown-link {
+    position: relative;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+.dropdown.second {/* Jarak andara link down */
+    top: 0;
+    left: 100%;
+    padding-left: .1rem;
+    cursor: pointer;
+    transform: translateX(10px);
+}
+
+.nav-link:hover>.dropdown,
+.dropdown-link:hover>.dropdown {
+    transform: translate(0, 0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Mav */
+/* =================================== */
+/* Content */
+/* Titles */
+.section-title {
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+}
+
+.pre-title {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.281);
+    letter-spacing: 0.5rem;
+    color: rgb(0, 0, 0);
+    position: relative;
+    padding-left: 40px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Layouts */
+
+/* End Preparation */
+
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* Layouts */
+.grid-3 {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; use this first, use code below when its time for explaining responsive design part */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+
+/* Burger - Save for later on video */
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    margin: 7px;
+    transition: all 0.3s;
+    z-index: 99;
+}
+
+.burger {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 33px;
+    right: 35px;
+}
+
+/* Hero Section */
+#hero {
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* We're not going to use automatic template columns, because we need to know when the columns is go below. So we can exchange the order of the element */
+    align-items: center;
+}
+.hero-left p{
+    color: #000;
+    padding: 1rem;
+    border-bottom: 2px solid #008cff;
+    font-weight: 400;
+}
+.hero-name {
+    padding: 0.4rem;
+    background-color: #86c8ff59;
+    margin: 1rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    text-align: center;        
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-name span {
+    color: yellow;
+}
+
+.hero-right img {
+    width: 60%;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+}
+/* Services Section */
+#services {
+    background-color: var(--secondaryBackgroundColor);
+    padding: var(--sectionPadding);
+}
+
+.services .pre-title {
+    margin: 0 auto;
+}
+
+.services-title {
+    text-align: center;
+}
+
+.service {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--primaryBackgroundColor);
+    border-radius: var(--itemBorderRadius);
+}
+
+.service h4 {
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.service-icon {
+    background: var(--thirdBackgroundColor);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.service-icon svg {
+    fill: var(--primaryIconColor);
+}
+
+.service-icon {
+    background: var(--thirdBackgroundColor);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.service-icon svg {
+    fill: var(--primaryIconColor);
+}
+
+/* Portfolios */
+#portfolios {
+    padding: var(--sectionPadding);
+}
+
+.portfolio {
+    border-radius: var(--itemBorderRadius);
+    overflow: hidden;
+    /* supaya gambar yang diatas itu dia ngikut border radiusnya, karena yang dikasih border radius disini adalah div portfolio ini */
+    border: 1px solid var(--borderColor);
+}
+
+.portfolio-cover {
+    height: 250px;
+}
+
+.portfolio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-info {
+    padding: 2rem 1.5rem;
+}
+
+.portfolio-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.portfolio h4 {
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.portfolio-title a svg:hover {
+    fill: var(--primaryIconColor);
+}
+
+.portfolio-title a svg {
+    transition: 0.2s ease-in-out;
+}
+
+.portfolio-tags {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.portfolio-tags div {
+    font-size: 0.9rem;
+    border: 1px solid var(--borderColor);
+    padding: 0.4rem 1rem;
+    color: var(--secondaryTextColor);
+}
+
+.portfolio-tags div {
+    font-size: 0.9rem;
+    border: 1px solid var(--borderColor);
+    padding: 0.4rem 1rem;
+    color: var(--secondaryTextColor);
+}
+
+/* Skills and Education */
+#skills {
+    padding: var(--sectionPadding);
+    background: var(--secondaryBackgroundColor);
+}
+
+.skills-grid {
+    display: grid;
+    /* grid-template-columns: 40% 60%; */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.education {
+    display: flex;
+    gap: 1rem;
+}
+
+.education .line {
+    padding: 0 0.7rem;
+}
+
+.education .line div {
+    width: 2px;
+    height: 100%;
+    background: var(--borderColor);
+    position: relative;
+}
+
+.education-info p {
+    margin: 0.6rem 0 1.4rem;
+}
+
+.education-years {
+    margin-bottom: 3rem;
+}
+
+/* The dot on the line */
+.education .line div:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: var(--borderColor);
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+
+/* Right side of Skills */
+.skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+
+.skills-right ul {
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+
+/* Contact Section */
+#contact {
+    padding: var(--sectionPadding);
+}
+
+.contact {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.contact-form div {
+    margin-bottom: 1.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    font-family: "Roboto", sans-serif;
+    background: var(--secondaryBackgroundColor);
+    border: 1px solid var(--borderColor);
+    border-radius: 3px;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #9d9fa1;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 1px solid #7d7d7d;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    background-color: var(--primaryIconColor);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+    background-color: var(--primaryIconColorHover);
+}
+
+/* Contact Section - Right Side */
+.contact-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.contact-item-icon {
+    background: var(--thirdBackgroundColor);
+    /* padding: 0.8rem 1rem; */
+    width: 53px;
+    height: 53px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-item-icon svg {
+    fill: var(--primaryIconColor);
+}
+
+.contact-item-detail h4 {
+    margin-bottom: 0.6rem;
+}
+
+/* Footer Section */
+footer {
+    padding: 4rem 0;
+    background: var(--secondaryBackgroundColor);
+    text-align: center;
+}
+
+.footer-icons {
+    margin-bottom: 1rem;
+}
+
+.footer-icons a {
+    margin: 0 0.5rem;
+}
+
+.footer-icons svg {
+    fill: #3e3f40;
+}
+
+.footer-icons a:hover svg {
+    fill: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====================  Media query  ================= */
+
+
+
+
+
+
+
+@media (max-width: 920px) {
+
+
+
+} 
