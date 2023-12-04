@@ -11,7 +11,7 @@
     /* untuk line di pre-title */
 
     --primaryBackgroundColor: #fff;
-    --secondaryBackgroundColor: #69bde7;
+    --secondaryBackgroundColor: #9fc7ff;
     --thirdBackgroundColor: #f5f3fe;
 
     --primaryIconColor: #7e74f1;
@@ -78,14 +78,7 @@ padding: 0.1rem;
 }
 .contak-3 a:hover{
     color: rgb(0, 181, 253);}
-.aa {
 
-        background-image: url('../images/bg.png');
-            background-size: cover;
-            width: 100%;
-            height: 100%;
-            z-index: -100;
-}
 
 h1,
 h2,
@@ -195,10 +188,19 @@ a {
     font-size: 3rem;
     font-weight: 700;
     margin: 0.5rem 0 1rem;
+    background-color: #00477733;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    
 }
 
 .hero-name span {
-    color: var(--primaryIconColor) !important;
+    color: #ffffff;
+}
+.hero-left p{
+    color: #000;
+    font-weight: 500;
 }
 
 .hero-right img {
@@ -785,6 +787,24 @@ header {
 }
 
 @media (max-width: 920px) {
+.contak {
+        background-color: #FFBE88;
+        color: #000;
+    }
+
+.contact-row {
+        background-color: #FFBE88;
+        color: #000;
+        display: block;
+        /* justify-content: space-between; */
+        margin: 0 8%;
+        padding: 4px;
+        font-size: 12px;
+    }
+
+
+
+
     .hamburger-menu-container {
         display: flex;
     }
@@ -930,3 +950,34 @@ header {
         transform: translateY(15px);
     }
 }
+
+
+
+/* ================================================================== */
+
+
+.fullscreen-bg img {
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    /* width: 100vh; */
+    /* height: 100ch; */
+    overflow: hidden;
+    z-index: -100;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+                display: flex;
+                    align-items: center;
+                    justify-content: center;
+}
+
+/* ------- */
+
+.bg-logo{
+    background-image: url('../images/bg.png');
+    background-size: cover;
+}
+
