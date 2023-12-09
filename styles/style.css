@@ -549,9 +549,6 @@ header {
     text-transform: uppercase;
     line-height: 3rem;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.26);
-    background-color: #00c3ff;
-    padding: 1rem;
-    border:  2rem solid black;
 
 }
 
@@ -823,7 +820,7 @@ header {
 
     .nav-btn {
         position: fixed;
-        height: calc( 100vh ,3rem );
+        height: calc( 100vh  );
         top: 3rem;
         left: 0%;
         width:100%;
