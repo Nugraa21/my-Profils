@@ -548,7 +548,10 @@ header {
     letter-spacing: 2px;
     text-transform: uppercase;
     line-height: 3rem;
-    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.486);
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.26);
+    background-color: #00c3ff;
+    padding: 1rem;
+    border:  2rem solid black;
 
 }
 
@@ -820,18 +823,20 @@ header {
 
     .nav-btn {
         position: fixed;
-        height: calc(100vh - 3rem);
+        height: calc( 100vh ,3rem );
         top: 3rem;
-        left: 0;
-        width: 100%;
-        background-color: #69bde7;
+        left: 0%;
+        width:100%;
+        backdrop-filter: blur(10px);
+        /* background-color: #0075af; */
+        color: #000;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         overflow-x: hidden;
         overflow-y: auto;
         transform: translateX(100%);
-        transition: .65s;
+        transition: .5s;
     }
 
     #check:checked~.nav-btn {
@@ -853,7 +858,7 @@ header {
     }
 
     .nav-link {
-        width: 100%;
+        width: 50%;
         opacity: 0;
         transform: translateY(15px);
     }
@@ -865,7 +870,8 @@ header {
 
     .nav-link:hover>a {
         transform: scale(1);
-        background-color: #50a9d6;
+        background-color: #00619244;
+        color: white;
     }
 
     .dropdown,
@@ -878,7 +884,7 @@ header {
         pointer-events: auto;
         width: 100%;
         padding: 0;
-        background-color: #3183ac;
+        background-color: #003d5c38;
         display: none;
     }
 
@@ -894,7 +900,7 @@ header {
 
     .dropdown-link>a {
         background-color: transparent;
-        color: #fff;
+        color: #000000;
         padding: 1.2rem 2rem;
         line-height: 1;
     }
@@ -913,14 +919,14 @@ header {
 
     .arrow {
         z-index: 1;
-        background-color: #69bde7;
+        background-color: #69bde700;
         left: 10%;
-        transform: scale(1.1) rotate(45deg);
+        transform: scale(1.1) rotate(5deg);
         transition: .5s;
     }
 
     .nav-link:hover .arrow {
-        background-color: #50a9d6;
+        background-color: #50a9d600;
     }
 
     .dropdown .dropdown .arrow {
@@ -932,7 +938,7 @@ header {
     }
 
     .dropdown-link:first-child:hover~.arrow {
-        background-color: #50a9d6;
+        background-color: #00000000;
     }
 
     .nav-link>a>i {
