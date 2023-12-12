@@ -841,7 +841,7 @@ header {
         height: calc( 100vh  );
         top: 64px;
         left: 0%;
-        width:70%;
+        width:60%;
         backdrop-filter: blur(10px);
         background-color: #0075af84;
         flex-direction: column;
