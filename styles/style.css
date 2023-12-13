@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"); */
 
 :root {
     --primaryTextColor: #000000;
@@ -36,6 +36,8 @@
             --10: #1D3557;
         
             --11: yellow;
+
+            --Nav : #00aeff;
         
             /* code */
             --backdrop-filter: blur(10px);
@@ -215,7 +217,7 @@ a {
 /* Services Section */
 #services {
     /* background-color: var(--secondaryBackgroundColor); */
-    padding: var(--sectionPadding);
+    padding:1rem;
 }
 
 .services .pre-title {
@@ -352,7 +354,7 @@ a {
 
 /* Skills and Education */
 #skills {
-    padding: var(--sectionPadding);
+    padding: 2rem;
     background: #34d0db41;
     backdrop-filter: blur(10px);
     border: 2px solid rgb(229, 255, 0);
@@ -362,7 +364,11 @@ a {
     display: grid;
     /* grid-template-columns: 40% 60%; */
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        padding: 1REM;
+            background-color: #00000036;
+            border-radius: 1REM;
     gap: 3rem;
+    border: 2px solid rgb(0, 162, 255);
 }
 
 .education {
@@ -374,12 +380,12 @@ a {
     padding: 0 0.7rem;
 }
 
-.education .line div {
+/* .education .line div {
     width: 2px;
     height: 100%;
-    background: var(--borderColor);
+    background: rgb(0, 0, 0);
     position: relative;
-}
+} */
 
 .education-info p {
     margin: 0.6rem 0 1.4rem;
@@ -390,15 +396,15 @@ a {
 }
 
 /* The dot on the line */
-.education .line div:before {
+/* .education .line div:before {
     content: "";
     width: 15px;
     height: 15px;
-    background: var(--borderColor);
-    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
     position: absolute;
     left: -6px;
-}
+} */
 
 /* Right side of Skills */
 .skills-list {
@@ -522,9 +528,9 @@ a {
     text-decoration: none;
 }
 header {
-    position: sticky;
-    top: 0px;
-    background-color: #60b4df;
+    position: fixed;
+    /* position: sticky;/ */
+    top: 0rem;
     width: 100%;
     z-index: 1000;
     padding: 0.5rem;
@@ -566,7 +572,7 @@ header {
     letter-spacing: 2px;
     text-transform: uppercase;
     line-height: 3rem;
-    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.26);
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.103);
 
 }
 
@@ -835,8 +841,16 @@ header {
     #check {
         display: block;
     }
-
+        header {
+            /* position: fixed; */
+            position: sticky;
+            /* top: 0rem; */
+            /* width: 100%; */
+            /* z-index: 1000; */
+            /* padding: 0.5rem; */
+        }
     .nav-btn {
+        text-align: left;
         position: fixed;
         height: calc( 100vh  );
         top: 64px;
@@ -880,7 +894,7 @@ header {
 
     .nav-link>a {
         line-height: 1;
-        padding: 1.6rem 2rem;
+        padding: 1.6rem ;
     }
 
     .nav-link:hover>a {
@@ -892,12 +906,12 @@ header {
     .dropdown,
     .dropdown.second {
         position: initial;
-        top: initial;
-        left: initial;
+        /* top: initial; */
+        /* left: initial; */
         transform: initial;
-        opacity: 1;
+        /* opacity: 1; */
         pointer-events: auto;
-        width: 100%;
+        /* width: 50%; */
         padding: 0;
         background-color: #003d5c38;
         display: none;
@@ -916,7 +930,7 @@ header {
     .dropdown-link>a {
         background-color: transparent;
         color: #000000;
-        padding: 1.2rem 2rem;
+        padding: 1.2rem ;
         line-height: 1;
     }
 
@@ -1002,13 +1016,41 @@ header {
 
 /* ------- */
 
+#animated-text {
+    font-size: 2em;
+    color: #333;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00a2ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#scrollToTopBtn:hover {
+    background-color: #ffffff;
+    color: #00a2ff;
+
+}
 .bg-logo{
     background-image: url('../images/bg.png');
     background-size: cover;
+    /* background-color: #000; */
 }
 
 .bg-logo-2{
     background-image: url('../images/bd-bawah.png');
     background-size: cover;
 }
-
+#navigasi {
+    transition: background-color 0.5s ease;
+}
