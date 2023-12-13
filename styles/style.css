@@ -1016,12 +1016,7 @@ header {
 
 /* ------- */
 
-#animated-text {
-    font-size: 2em;
-    color: #333;
-    transform: translateY(20px);
-    transition: opacity 1s, transform 1s;
-}
+
 
 
 #scrollToTopBtn {
