@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 var header = document.getElementById('navigasi');
                 var scrollPosition = window.scrollY;
 
-                if (scrollPosition > 150) {
+                if (scrollPosition > 100) {
                     header.style.backgroundColor = ' #00aeff';
                     // header.style.backgroundColor = '#60b5df44'; // sebelum
                 } else {
