@@ -51,7 +51,7 @@
 }
 
 body {
-    background-color: #3183ac85;
+    background-color: #fff700;
     font-family: "Roboto", sans-serif;
     /* filter: brightness(50%) */
 }
@@ -297,7 +297,7 @@ a {
     overflow: hidden;
     /* supaya gambar yang diatas itu dia ngikut border radiusnya, karena yang dikasih border radius disini adalah div portfolio ini */
     border: 2px solid #fff;
-    background-color: #0000005b;
+    background-color: #0095ff;
     backdrop-filter: blur(10px);
     box-shadow: 0px 4px 10px rgba(0, 25, 80, 0.459);
 }
@@ -377,6 +377,11 @@ a {
     color: rgb(255, 255, 255);
     background-color: #01003084;
     border-radius: 0.5rem;
+}
+.portfolio-tags div:hover {
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    background-color: #e5ff00;
 }
 
 /* Skills and Education */
@@ -557,6 +562,7 @@ a {
 }
 
 header {
+    /* justify-content: space-between; */
     position: fixed;
     /* position: sticky;/ */
     top: 0rem;
@@ -847,6 +853,9 @@ header {
 }
 
 @media (max-width: 920px) {
+    body{
+        background-color: #3cc5ff;
+    }
     .contak {
         background-color: #FFBE88;
         color: #000;
