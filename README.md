@@ -1,2 +1,5 @@
-# my-Profils
- iseng aja buat web untuk diri saya sendiri
+# Web Profils
+
+## Bentuk dari web
+
+![Alt Text](profils.png)
