@@ -1,5 +1,5 @@
 # Web Profils
 
-## Bentuk dari web
+## Bentuk dari website
 
 ![Alt Text](profils.png)
