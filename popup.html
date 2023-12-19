@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    #popup-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(254, 0, 0, 0);
+        visibility: hidden;
+    }
+
+    #popup-box {
+        border: 2px;
+        background: #fff;
+        padding: 20px;
+        max-width: 100vh;
+        margin: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    button {
+        background: #007BFF;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-up Notification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="popup-container">
+        <div id="popup-box">
+            <p>Halaman web ini sedang nasih memerlukan penyesuwaian  pada tampilan Windows maupun mobile.</p>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            showPopup();
+        });
+        
+        function showPopup() {
+            var popupContainer = document.getElementById("popup-container");
+            popupContainer.style.visibility = "visible";
+        }
+
+        function closePopup() {
+            var popupContainer = document.getElementById("popup-container");
+            popupContainer.style.visibility = "hidden";
+        }
+
+    </script>
+</body>
+
+</html>

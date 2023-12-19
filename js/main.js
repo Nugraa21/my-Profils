@@ -53,7 +53,19 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
 // Animasi ------------------------------ Animasi
+        document.addEventListener("DOMContentLoaded", function () {
+            showPopup();
+        });
 
+        function showPopup() {
+            var popupContainer = document.getElementById("popup-container");
+            popupContainer.style.visibility = "visible";
+        }
+
+        function closePopup() {
+            var popupContainer = document.getElementById("popup-container");
+            popupContainer.style.visibility = "hidden";
+        }
 
 
 
