@@ -169,7 +169,7 @@ a {
     color:rgb(0, 0, 0);
     /* position: relative; */
     padding: 10px;
-    text-align: center;
+    /* text-align: center; */
     width: fit-content;
     font-weight: 700;
     font-size: 1rem;
@@ -257,15 +257,46 @@ a {
 }
 
 /* Services Section */
+.sofwair{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+.sofwair-1{
+    padding: 1rem;
+    background-color: #002e42;
+    border: 5px solid rgb(0, 153, 255);
+    border-radius: 2rem;
+    margin: 1rem;
+}
 #services {
     /* background-color: var(--secondaryBackgroundColor); */
     padding: 1rem;
 }
+#services-sofwair {
+    text-align: center;
+
+    /* background-color: var(--secondaryBackgroundColor); */
+    padding: 1rem;
+}
+
 
 .services .pre-title-kuning {
     margin: 0 auto;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.486);
-    background-color: rgb(255, 251, 0)000;
+    background-color: rgb(200, 255, 0)000;
+}
+.pre-title-biru {
+    margin: 0 auto;
+}
+.pre-title-biru h1{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.486);
+    /* background-color: #047dff; */
+    padding: 1rem;
 }
 
 .services-title {
@@ -412,7 +443,7 @@ a {
     border: 1px solid white;
     padding: 0.4rem 1rem;
     color: rgb(255, 255, 255);
-    background-color: #01003084;
+    background-color: #21300084;
     border-radius: 0.5rem;
 }
 .portfolio-tags div:hover {
@@ -424,20 +455,20 @@ a {
 /* Skills and Education */
 #skills {
     padding: 2rem;
-    background: #34d0db41;
+    background: #0095ff;
     backdrop-filter: blur(10px);
-    border: 2px solid rgb(229, 255, 0);
+    border-top: 10px solid rgb(255, 255, 255);
+    border-bottom: 10px solid rgb(255, 255, 255);
 }
 
 .skills-grid {
     display: grid;
     /* grid-template-columns: 40% 60%; */
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    padding: 1REM;
+    padding: 1rem;
     background-color: #00000036;
     border-radius: 1REM;
     gap: 3rem;
-    border: 2px solid rgb(0, 162, 255);
 }
 
 .education {
@@ -491,6 +522,9 @@ a {
 #contact {
     padding: var(--sectionPadding);
 }
+.sofwair-example {
+    padding: var(--sectionPadding);
+}
 
 .contact {
     display: grid;
@@ -499,56 +533,22 @@ a {
     gap: 3rem;
 }
 
-.contact-form div {
-    margin-bottom: 1.4rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 0.75rem 1.3rem;
-    font-family: "Roboto", sans-serif;
-    background: var(--secondaryBackgroundColor);
-    border: 1px solid var(--borderColor);
-    border-radius: 3px;
-    resize: none;
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-    color: #9d9fa1;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border: 1px solid #7d7d7d;
-}
-
-.btn-submit {
-    width: 100%;
-    padding: 0.75rem 1.3rem;
-    background-color: var(--primaryIconColor);
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-}
-
-.btn-submit:hover {
-    background-color: var(--primaryIconColorHover);
-}
 
 /* Contact Section - Right Side */
 .contact-item {
+    background-color: #00b5de;
+    padding: 1rem;
     display: flex;
     gap: 1.5rem;
     margin-bottom: 2.5rem;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    border-radius: 1rem;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.276);
+
 }
 
 .contact-item-icon {
-    background: var(--thirdBackgroundColor);
+    background:rgb(246, 255, 0);
     /* padding: 0.8rem 1rem; */
     width: 53px;
     height: 53px;
@@ -559,7 +559,7 @@ a {
 }
 
 .contact-item-icon svg {
-    fill: var(--primaryIconColor);
+    fill: rgb(0, 162, 255);
 }
 
 .contact-item-detail h4 {
@@ -569,8 +569,8 @@ a {
 /* Footer Section */
 footer {
     padding: 4rem 0;
-    background: var(--secondaryBackgroundColor);
     text-align: center;
+    
 }
 
 .footer-icons {
