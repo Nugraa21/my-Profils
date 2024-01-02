@@ -1149,6 +1149,9 @@ header {
 }
 
 .bg-logo {
+    background: linear-gradient(to bottom, #00ce78 , #00829c);
+
+    /* background: linear-gradient(45deg, #003d92, #00ff6a);  */
     /* background-image: url('../images/bg.png'); */
     background-size: cover;
     background-color: #00082c;
@@ -1157,6 +1160,8 @@ header {
 }
 
 .bg-logo-2 {
+    background: linear-gradient(to bottom, #00829c, #00000000);
+
     background-color: #00082c;
     /* border-bottom: 40px solid rgb(255, 255, 255); */
     /* background-color: #ffaa00aa; */
