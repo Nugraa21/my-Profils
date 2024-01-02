@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Search Example</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #2e2e2e;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        #search-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #searchInput {
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+            border: 1px solid #151515;
+            border-radius: 5px;
+        }
+
+        #searchIcon {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        #search-results {
+            padding: 1rem;
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+            justify-content: center;
+            background-color: rgb(65, 65, 65);
+            border-radius: 1rem;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.182);
+        }
+
+        .search-result {
+            color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 400px;
+        }
+
+        svg {
+            width: 24px;
+            height: 24px;
+            fill: #555;
+            margin-right: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-T8eA5Q5eZM7IlmNzw8cuz2qAVUWqE4U+uw73NW6JRpGdo/vWWBTT+8RkNhZYb6IVeL7kqRFg5i3F3eaWgmYb6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1>Cari soal Anda</h1>
+    </header>
+
+    <label for="searchInput">--</label>
+    <div id="search-container">
+        <input type="text" id="searchInput" oninput="performSearch(this.value)">
+        <!-- <i id="searchIcon" class="fas fa-search" onclick="performSearch(document.getElementById('searchInput').value)"></i> -->
+    </div>
+
+    <div id="search-results"></div>
+
+    <script>
+        function performSearch(query) {
+            // Simulate fetching SVG images from a database or API
+            // In a real-world scenario, you would perform an asynchronous request
+
+            // For simplicity, let's assume a static array of SVG images
+            const mockResults = [
+                "	Keuntungan sel berbentuk Hexagon pada jaringan seluler.</br></br> Jawaban : </br></br> Jarak dari pusat ke puncak sama dengan panjang sisi dan menyediakan antenna yg sama",
+                "	Keuntungan sel berbentuk Square pada jaringan seluler.</br></br> Jawaban : </br></br> Lebih baik jika semua antena yg berdekatan berjarak sama dan menyederhanakan memilih Dan beralih ke antena baru",
+                " Berikut benar tentang fitur jaringan seluler, kecuali?</br></br> Jawaban : </br></br> Interferensi dibiarkan terjadi tanpa batas",
+                " Berikut ini adalah alasan relevansi 6LoWpan dengan protocol Zigbee adalah, kecuali?</br></br> Jawaban : </br></br> 6LoWpan merupakan protocol yg tidak berkaitan dengan Zigbee",
+                " Mobile WIMAX pertama</br></br> Jawaban : </br></br> 802.16e. Versi ini menggunakan SOFDMA.</br></br> Jawaban : </br></br> Orthogonal Frequency division Multiple Access",
+                " WIMAX merupakan singkatan dari.</br></br> Jawaban : </br></br> Worldwide Interoperability for Microwave Access",
+                " Konsep menggunakan frekuensi radio yg sama di dalam area tertentu, yang dipisahkan oleh Jarak yg cukup jauh, dengan sedikit gangguan.</br></br> Jawaban : </br></br> Frequency Reuse",
+                " Beberapa elemen perangkat WIMAX, kecuali?</br></br> Jawaban : </br></br> Telecomunication Base (TB)",
+                " Berikut benar tentang jaringan seluler?</br></br> Jawaban : </br></br> Tiga jawaban yg lain betul",
+                " Apakah kepanjangan BWA dalam jaringan nirkabel.</br></br> Jawaban : </br></br> Broadband wireless access",
+                " Area jangkauan jaringan seluler dibagi menjadi…….. masing” memiliki antena sendiri untuk Mentransmisikan sinyal.</br></br> Jawaban : </br></br> Sel",
+                " Mode Kerja node pada jaringan 6LoWpan.</br></br> Jawaban : </br></br> Secure dan non-secure mode",
+                " Jaringan seluler adalah teknologi dasar untuk?</br></br> Jawaban : </br></br> Tiga jawaban yg lain betul",
+                " Angka 6 pada terminologi 6LoWpan menunjukkan………. </br></br> Jawaban : </br></br> Alamat IPv6",
+                " Jenis antena sektoral WIMAX, kecuali?</br></br> Jawaban : </br></br> Sektoral 150 derajat",
+                " Bentuk sel pada jaringan seluler.</br></br> Jawaban : </br></br> Square atau Hexagon",
+                " Macam peralatan ZigBee, kecuali?</br></br> Jawaban : </br></br> Subscriber Station",
+                " Dokumen yg mengatur spesifikasi untuk jaringan 6LoWpan.</br></br> Jawaban : </br></br> Tiga jawaban yg lain betul",
+                " Keunggulan jaringan ZigBee, kecuali?</br></br> Jawaban : </br></br> Topologi Start",
+                " Bentuk sel yg sangat disarankan untuk cakupan dan perhitungannya yg mudah.</br></br> Jawaban : </br></br> Hexagon",
+                " Sel yg memiliki empat tetangga pada jarak d dan empat pada jarak akar 2 d.</br></br> Jawaban : </br></br> Square",
+                " Pada linux 6LoWpan menggunakan module kernel linux yg  disebut?</br></br> Jawaban : </br></br> Linux-wpan",
+                " Standar international untuk 6LoWpan.</br></br> Jawaban : </br></br> IEEE 802.15.4",
+                " Cara pengiriman data pada ZigBee, kecuali?</br></br> Jawaban : </br></br> Acak",
+                " Sebelum tahun 2012, project linux-wpan bernama?</br></br> Jawaban : </br></br> Linux-ZigBee",
+                " Salah satu mode security 6Lowpan adalah.</br></br> Jawaban : </br></br> Access Control List (ACL)",
+                " Berikut ini adalah topology yg didukung oleh 6LoWpan?</br></br> Jawaban : </br></br> Mesh",
+                " Kepanjangan Lo pada terminologi 6LoWpan.</br></br> Jawaban : </br></br> Low Power",
+                " Jangkauan jarak WIMAX 802.16-2004.</br></br> Jawaban : </br></br> 8Km",
+                " Pada 6LoWpan menggunakan internet protocol.</br></br> Jawaban : </br></br> IPv6",
+                " Maximum throughput WIMAX 802.16-2004.</br></br> Jawaban : </br></br> 75 Mbps",
+                " Kepanjangan LR pada LRWPAN?</br></br> Jawaban : </br></br> Low Rate",
+                " Maximum throughput WIMAX 802.16e.</br></br> Jawaban : </br></br> 30 Mbps",
+                " Frekuensi Kerja ZigBee, kecuali?</br></br> Jawaban : </br></br> 5 GHz",
+                " Komponen BS pada WIMAX terdiri dari, kecuali?</br></br> Jawaban : </br></br> ACU",
+                " Standar IEEE ZigBee?</br></br> Jawaban : </br></br> 802.15.4",
+                " Kecepatan ZigBee?</br></br> Jawaban : </br></br> 250 Kbps",
+                " Jangkauan jarak WIMAX 802.16e.</br></br> Jawaban : </br></br> 5 Km",
+                " Jangkau jaringan ZigBee?</br></br> Jawaban : </br></br> 76 m",
+                " Uji ping menunjukan destination host unreachable menunjukan?</br></br> Jawaban : </br></br> Komputer tujuan beda jaringan",
+                " Kepanjangan SSID.</br></br> Jawaban : </br></br> Service set identifier",
+                " Kepanjangan TKIP dalam Encryption type jaringan wireless.</br></br> Jawaban : </br></br> Temporal Key Integrity Protocol",
+                " Berikut beberapa parameter yg dipantau, Kecuali?</br></br> Jawaban : </br></br> Statistik pada kesehatan datacenter",
+                " Untuk Menguji konektivitas jaringan wireless dengan isyarat ICMP?</br></br> Jawaban : </br></br> Ping",
+                " Yg bukan termasuk informasi dalam pemantauan statistik pada switch.</br></br> Jawaban : </br></br> Penggunaan daya listrik pada switch",
+                " Untuk menghubungkan banyak perangkat dengan 1 AP, maka anda Menggunakan mode?</br></br> Jawaban : </br></br> Infrastruktur",
+                " Untuk melihat alamat ip yg diperoleh komputer?</br></br> Jawaban : </br></br> Ipconfig",
+                " Penggunaan/implementasi utama jaringan infrared dari Bluetooth.</br></br> Jawaban : </br></br> Tiga jawab yg lain betul",
+                " Berikut ini adalah kekurangan Bluetooth, kecuali?</br></br> Jawaban : </br></br> Aman dari interferensi",
+                " Penamaan jaringan wireless pada access point sering dikenal dengan?</br></br> Jawaban : </br></br> Service set identifier (SSID)",
+                " Beberapa bluetooth device bisa digunakan untuk adhoc network yg disebut.</br></br> Jawaban : </br></br> Piconect",
+                " Metode Pengamanan jaringan wireless paling ketat.</br></br> Jawaban : </br></br> Filter NAC",
+                " Yg bukan termasuk informasi dalam pemantauan statistik pada internet.</br></br> Jawaban : </br></br> Berapa kali jumlah ping dan packet loss ke data center",
+                " IrDA adalah bentuk implementasi jaringan menggunakan.</br></br> Jawaban : </br></br> Infrared",
+                " Berikut benar tentang Bluetooth, kecuali?</br></br> Jawaban : </br></br> Kecepatan</br></br> Jawaban : </br></br> 10Mbps",
+                " Berikut benar tentang infrared, kecuali?</br></br> Jawaban : </br></br> Jarak</br></br> Jawaban : </br></br> 20m, tidak tembus media buram",
+                " Standar internasional untuk jaringan Bluetooth.</br></br> Jawaban : </br></br> IEEE 803.15",
+                " Berikut ini adalah karakteristik dari Bluetooth adalah?</br></br> Jawaban : </br></br> FHSS Teknologi",
+                " Karakteristik jaringan infrared.</br></br> Jawaban : </br></br> Kecepatan transfer data</br></br> Jawaban : </br></br> 4Mbps",
+                " Karakteristik jaringan Bluetooth.</br></br> Jawaban : </br></br> Jumlah peralatan</br></br> Jawaban : </br></br> maksimum 8 peralatan",
+                " Untuk mencari semua komputer yg dalam keadaan aktif terhubung. Jaringan?</br></br> Jawaban : </br></br> Nmap",
+                " Macam Encryption type jaringan wireless.</br></br> Jawaban : </br></br> AES",      
+                " Topologi ZigBee?</br></br> Jawaban : </br></br> Mesh",
+                " Tipe alat jaringan pada ZigBee adalah sebagai berikut, kecuali?</br></br> Jawaban : </br></br> Base Station (BS)",
+                " LMDS ditujukan untuk mepercepat dan menjembatani area Network Metropolitan di perusahaan besar dan di kampus-kampus.</br></br> Jawaban : </br></br> Local Multipoint Distribution Service",
+                " Berikut adalah alat dalam jaringan WIMAX.</br></br> Jawaban : </br></br> Base station (BS)",
+                " Proses verifikasi klaim bahwa entitas (elektronik) diperbolehkan untuk Bertindak atas nama yg diberikan dikenal entitas (fisik). Dengan kata lain, Proses membuktikan bahwa entitas fisik sesuai dengan salah satu dari data Elektronik tertentu.</br></br> Jawaban : </br></br> Authentication",
+            ];
+
+            // Convert the query to lowercase for case-insensitive comparison
+            const lowerCaseQuery = query.toLowerCase();
+
+            // Filter results based on the lowercase query
+            const filteredResults = mockResults.filter(result => result.toLowerCase().includes(lowerCaseQuery));
+
+            // Display the results
+            const searchResultsContainer = document.getElementById("search-results");
+            searchResultsContainer.innerHTML = "";
+
+            if (filteredResults.length === 0) {
+                searchResultsContainer.innerHTML = "No results found.";
+            } else {
+                filteredResults.forEach(result => {
+                    const div = document.createElement("div");
+                    div.className = "search-result";
+                    div.innerHTML = result;
+                    searchResultsContainer.appendChild(div);
+                });
+            }
+        }
+    </script>
+
+</body>
+</html>
