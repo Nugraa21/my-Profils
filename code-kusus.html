@@ -5,9 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SVG Search Example</title>
     <style>
+
+
+
+
+
+
+
+
+
+
         body {
+            /* background: linear-gradient(to right, #0064c8, #000000, #0064c8); */
+
+            background: linear-gradient(to right, #d84dff, #ffffff ,#00d0ff);           
             font-family: 'Arial', sans-serif;
-            background-color: #2e2e2e;
             color: #000000;
             margin: 0;
             padding: 0;
@@ -19,14 +31,23 @@
         }
 
         header {
+            /* border: 2px solid white; */
+            padding: 1rem;
+            border-radius: 10rem;
+            /* background-color: #ffffff69; */
             text-align: center;
             margin-bottom: 20px;
-            color: white;
+            color: rgb(0, 0, 0);
         }
 
         label {
+            border: 2px solid rgb(255, 3, 3);
+            text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.244);
             font-size: 18px;
             margin-bottom: 10px;
+            background-color: #00000000;
+            border-radius: 1rem;
+            padding: 1rem;
         }
 
         #search-container {
@@ -39,8 +60,9 @@
             padding: 10px;
             font-size: 16px;
             width: 300px;
-            border: 1px solid #151515;
+            border: 1px solid #00d0ff;
             border-radius: 5px;
+            border-radius: 3rem;
         }
 
         #searchIcon {
@@ -49,39 +71,39 @@
         }
 
         #search-results {
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.244);
+            background: linear-gradient(to right, #2cfbff, #ae00ff);  
+            border: 2px solid rgb(0, 0, 0);          
+            font-family: 'Arial', sans-serif;
             padding: 1rem;
             /* display: flex; */
             /* flex-wrap: wrap; */
             justify-content: center;
-            background-color: rgb(65, 65, 65);
             border-radius: 1rem;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.182);
         }
 
         .search-result {
-            color: white;
+            border-bottom: 4px solid rgb(0, 225, 255);
+            background-color: rgb(18, 71, 151);
+            box-shadow: 0px 0px 10px rgba(0, 10, 48, 0.182);
+            color: rgb(255, 255, 255);
             margin: 10px;
             padding: 10px;
             border-radius: 5px;
             width: 400px;
         }
 
-        svg {
-            width: 24px;
-            height: 24px;
-            fill: #555;
-            margin-right: 5px;
-        }
+
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-T8eA5Q5eZM7IlmNzw8cuz2qAVUWqE4U+uw73NW6JRpGdo/vWWBTT+8RkNhZYb6IVeL7kqRFg5i3F3eaWgmYb6g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
     <header>
-        <h1>Cari soal Anda</h1>
+        <h1>Hi...   !</h1>
     </header>
 
-    <label for="searchInput">--</label>
+    <label for="searchInput">Terserah  Gua ..!</label>
     <div id="search-container">
         <input type="text" id="searchInput" oninput="performSearch(this.value)">
         <!-- <i id="searchIcon" class="fas fa-search" onclick="performSearch(document.getElementById('searchInput').value)"></i> -->
