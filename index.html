@@ -846,6 +846,54 @@
 </div> -->
 <div id="progresbar"></div>
 <div id="scrollpath"></div>
-</body>
+<div class="terminal-loader" id="loader">
+    <div class="terminal-header">
+      <div class="terminal-title">Nugra21.io</div>
+      <div class="terminal-controls">
+        <div class="control close"></div>
+        <div class="control minimize"></div>
+        <div class="control maximize"></div>
+      </div>
+    </div>
+    <div class="text">Loading...</div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Simulasi waktu pemuatan konten
+      setTimeout(function () {
+        // Sembunyikan elemen loader setelah simulasi selesai
+        hideLoader();
+      }, 2000); // Waktu simulasi pemuatan konten (dalam milidetik), ganti sesuai kebutuhan
 
+      // Penanganan kesalahan
+      window.addEventListener("error", function () {
+        // Tampilkan pesan kesalahan atau animasi loading jika terjadi kesalahan
+        showError();
+      });
+
+      // Penanganan ketika waktu pemuatan melebihi batas waktu tertentu (misalnya, 10 detik)
+      const maxLoadTime = 10000;
+      setTimeout(function () {
+        // Tampilkan pesan atau animasi loading jika waktu pemuatan terlalu lama
+        showLoadingOnSlowConnection();
+      }, maxLoadTime);
+    });
+
+    function hideLoader() {
+      // Hapus elemen loader
+      document.getElementById("loader").style.display = "none";
+    }
+
+    function showError() {
+      // Tampilkan pesan kesalahan atau animasi loading
+      document.querySelector(".text").innerHTML = "Error. Please try again.";
+    }
+
+    function showLoadingOnSlowConnection() {
+      // Tampilkan pesan atau animasi loading untuk koneksi yang lambat
+      document.querySelector(".text").innerHTML =
+        "Connection is slow. Loading may take longer.";
+    }
+  </script>
+</body>
 </html>
