@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 var scrollPosition = window.scrollY;
 
                 if (scrollPosition > 100) {
-                    header.style.backgroundColor = ' #00aeff';
+                    header.style.backgroundColor = ' #ff0051';
                     // header.style.backgroundColor = '#60b5df44'; // sebelum
                 } else {
                      header.style.backgroundColor = ' #00000000';

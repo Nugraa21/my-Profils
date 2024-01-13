@@ -11,11 +11,11 @@
     /* untuk line di pre-title */
 
     --primaryBackgroundColor: #fff;
-    --secondaryBackgroundColor: #9fc7ff;
+    --secondaryBackgroundColor: #ff9f9f;
     --thirdBackgroundColor: #f5f3fe;
 
     --primaryIconColor: #00000000;
-    --primaryIconColorHover: #5d51e8;
+    --primaryIconColorHover: #e85151;
 
     --sectionPadding: 6rem 0;
 
@@ -29,7 +29,7 @@
     --4: #E7B7CB;
     --5: #FFBE88;
 
-    --6: #E63946;
+    --6: #ff0051;
     --7: #F1FAEE;
     --8: #A8DADC;
     --9: #457B9D;
@@ -53,18 +53,18 @@
 body {
     /* background: linear-gradient(to bottom, #00152e, #003fb3); */
 
-    background-color: #003fb3;
+    background-color: #b30000;
     font-family: "Roboto", sans-serif;
     /* filter: brightness(50%) */
 }
 
 .contak {
-    background-color: #FFBE88;
+    background-color: #ff8888;
     color: #000;
 }
 
 .contact-row {
-    background-color: #FFBE88;
+    background-color: #ff8888;
     color: #000;
     display: flex;
     justify-content: space-between;
@@ -85,7 +85,7 @@ body {
 }
 
 .contak-3 a:hover {
-    color: rgb(0, 181, 253);
+    color: rgb(253, 0, 0);
 }
 
 
@@ -166,7 +166,7 @@ a {
 .pre-title-kuning {
     text-transform: uppercase;
     letter-spacing: 0.5rem;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     /* position: relative; */
     padding: 10px;
     /* text-align: center; */
@@ -174,7 +174,7 @@ a {
     font-weight: 700;
     font-size: 1rem;
     border: 2px solid rgb(255, 255, 255);
-    background-color: #ffff00;
+    background-color: #ff008c;
     border-radius: 1rem;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.244);
     justify-content: center;
@@ -190,7 +190,7 @@ a {
     font-weight: 700;
     font-size: 1rem;
     border: 2px solid rgb(255, 255, 255);
-    background-color: #00a6ff;
+    background-color: #ff009d;
     border-radius: 1rem;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.244);
     justify-content: center;
@@ -241,7 +241,7 @@ a {
 }
 
 .hero-name span {
-    color: #ccff00;
+    color: #000000;
 }
 
 .hero-left p {
@@ -283,8 +283,8 @@ a {
 }
 #services-sofwair {
     text-align: center;
-    background-color: #020030;
-    border-bottom: 50px solid rgb(0, 27, 110);
+    background-color: #300000;
+    border-bottom: 50px solid rgb(110, 0, 13);
 
     /* background-color: var(--secondaryBackgroundColor); */
     padding: 1rem;
@@ -294,7 +294,7 @@ a {
 .services .pre-title-kuning {
     margin: 0 auto;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.486);
-    background-color: rgb(200, 255, 0)000;
+    background-color: rgb(255, 0, 0)000;
 }
 .pre-title-biru {
     margin: 0 auto;
@@ -323,9 +323,9 @@ a {
 .service {
     padding: 6rem 2rem;
     text-align: center;
-    background: #45c7ff34;
+    background: #ff454534;
     border-radius: 1rem;
-    border: 2px solid rgb(0, 162, 255);
+    border: 2px solid rgb(255, 162, 0);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.26);
     backdrop-filter: blur(10px);
 }
@@ -372,11 +372,11 @@ a {
     padding-top: 2rem;
 }
 .nama-utdi a{
-    color: #d4ff77;
+    color: #ffafaf;
     font-weight: 700;
 }
 .nama-utdi a:hover{
-    color: #4f63ff;
+    color: #ffea4f;
 }
 #portfolios a{
     padding: 1rem;
@@ -388,9 +388,9 @@ a {
     overflow: hidden;
     /* supaya gambar yang diatas itu dia ngikut border radiusnya, karena yang dikasih border radius disini adalah div portfolio ini */
     border: 2px solid #fff;
-    background-color: #0095ff;
+    background-color: #ff00c363;
     backdrop-filter: blur(10px);
-    box-shadow: 0px 4px 10px rgba(0, 25, 80, 0.459);
+    box-shadow: 0px 4px 10px rgba(80, 0, 0, 0.459);
 }
 
 .portfolio-cover {
@@ -403,7 +403,7 @@ a {
     height: 100%;
     object-fit: cover;
     border-bottom: 2px solid rgb(255, 255, 255);
-    box-shadow: 0px 4px 10px rgba(0, 25, 80, 0.212);
+    box-shadow: 0px 4px 10px rgba(80, 0, 0, 0.212);
 }
 
 .portfolio-info {
@@ -430,7 +430,7 @@ a {
 
 }
 .portfolio a:hover{
-    color: rgb(0, 119, 255);
+    color: #ff8c8c;
 
 }
 
@@ -471,14 +471,14 @@ a {
 }
 .portfolio-tags div:hover {
     border: 1px solid white;
-    color: rgb(255, 255, 255);
-    background-color: #e5ff00;
+    color: rgb(0, 0, 0);
+    background-color: #670000;
 }
 
 /* Skills and Education */
 #ebaut {
     padding: 2rem;
-    background: #0095ff;
+    background: #cc0041;
     backdrop-filter: blur(10px);
     border-top: 10px solid rgb(217, 255, 0);
     border-bottom: 10px solid rgb(255, 255, 255);
@@ -544,7 +544,7 @@ a {
 /* Contact Section */
 #contact {
     /* background-color: #000; */
-    background: linear-gradient(to bottom, #00214c, #00000000);
+    background: linear-gradient(to bottom, #800000, #00000000);
     
     padding: var(--sectionPadding);
         /* margin: 10rem; */
@@ -569,18 +569,18 @@ a {
 /* Contact Section - Right Side */
 .contact-item-atas {
     color: rgb(255, 255, 255);
-    background-color: #0067a7;
+    background-color: #a7000084;
     padding: 1rem;
     display: flex;
     gap: 1.5rem;
     margin-bottom: 2.5rem;
-    border-bottom: 5px solid #0059ff;
+    border-bottom: 5px solid #ff9500;
     border-radius: 1rem;
     box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.276);
 
 }
 .contact-item {
-    background-color: #008cff;
+    background-color: #ff00669e;
     padding: 1rem;
     display: flex;
     gap: 1.5rem;
@@ -592,15 +592,15 @@ a {
 .contact-item:hover {
     background-color: #ffffff;
 
-    border-bottom: 5px solid rgb(0, 13, 255);
+    border-bottom: 5px solid rgb(255, 0, 0);
 
-    box-shadow: 1px 1px 50px rgb(0, 81, 255);
+    box-shadow: 1px 1px 50px rgb(255, 0, 183);
 
 }
 
 .contact-item-icon {
     cursor: pointer;
-    background-color: #003067ce;
+    background-color: #672100ce;
     /* padding: 0.8rem 1rem; */
     width: 53px;
     height: 53px;
@@ -610,7 +610,7 @@ a {
     justify-content: center;
 }
 .contact-item-icon:hover {
-    background-color: #000059;
+    background-color: #590052;
 }
 .contact-item-icon a:hover {
     color: #ff0000;
@@ -791,7 +791,7 @@ header {
     transform: translate(-10%, -10%) scale(1);
     /* animasi dari dalam keluar */
     background-color: #ffffff;
-    color: #457B9D;
+    color: #9d4571;
     border-radius: 0.5rem;
 }
 
@@ -857,7 +857,7 @@ header {
 }
 
 .dropdown-link:first-child:hover~.arrow {
-    background-color: #3498db;
+    background-color: #db348d;
 }
 
 .dropdown-link {
@@ -1013,7 +1013,7 @@ header {
         left: 0%;
         width: 60%;
         backdrop-filter: blur(10px);
-        background-color: #0075af84;
+        background-color: #af007a84;
         flex-direction: column;
         /* align-items: center; */
         /* justify-content: space-between; */
@@ -1055,7 +1055,7 @@ header {
 
     .nav-link:hover>a {
         transform: scale(1);
-        background-color: #00619244;
+        background-color: #92002c44;
         color: white;
     }
 
@@ -1069,7 +1069,7 @@ header {
         pointer-events: auto;
         /* width: 50%; */
         padding: 0;
-        background-color: #003d5c38;
+        background-color: #5c000038;
         display: none;
     }
 
@@ -1119,7 +1119,7 @@ header {
     }
 
     .dropdown-link:hover>a {
-        background-color: #3a91bd;
+        background-color: #bd3a47;
     }
 
     .dropdown-link:first-child:hover~.arrow {
@@ -1180,7 +1180,7 @@ header {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #00a2ff;
+    background-color: #ff0000;
     color: white;
     border: none;
     border-radius: 5px;
@@ -1190,7 +1190,7 @@ header {
 
 #scrollToTopBtn:hover {
     background-color: #ffffff;
-    color: #00a2ff;
+    color: #ff00d0;
 
 }
 
@@ -1209,7 +1209,7 @@ header {
     
     background: linear-gradient(to bottom, #9c0000, #37000000);
 
-    background-color: #00082c;
+    background-color: #2c0000;
     /* border-bottom: 40px solid rgb(255, 255, 255); */
     /* background-color: #ffaa00aa; */
     /* background-image: url('../images/bd-bawah.png'); */
@@ -1217,12 +1217,12 @@ header {
 }
 .pembatas{
     box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.161);
-    background-color: #003ab7;
+    background-color: #b70000;
     padding: 1rem;
 }
 .pembatas-1{
     box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.161);
-    background-color: #0051ff;
+    background-color: #ff0000;
     padding: 1rem;
 }
 #navigasi {
@@ -1252,7 +1252,7 @@ header {
         }
     
         button {
-            background: #007BFF;
+            background: #ff001e;
             color: #fff;
             border: none;
             padding: 10px 15px;
