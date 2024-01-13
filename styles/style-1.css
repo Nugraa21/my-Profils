@@ -51,6 +51,8 @@
 }
 
 body {
+    /* background: linear-gradient(to bottom, #00152e, #003fb3); */
+
     background-color: #003fb3;
     font-family: "Roboto", sans-serif;
     /* filter: brightness(50%) */
@@ -118,7 +120,7 @@ a {
 /* End Preparation */
 
 .main-container {
-    width: 1200px;
+    width: 1200px; 
     margin: 0 auto;
 }
 
@@ -268,6 +270,7 @@ a {
 
 }
 .sofwair-1{
+
     padding: 1rem;
     border-radius: 2rem;
     margin: 1rem;
@@ -483,12 +486,12 @@ a {
 
 .skills-grid {
     display: grid;
-    /* grid-template-columns: 40% 60%; */
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: 40% 60%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding: 1rem;
     background-color: #00000036;
-    border-radius: 1REM;
-    gap: 3rem;
+    border-radius: 0.5rem;
+    /* gap: 3rem; */
 }
 
 .education {
@@ -540,16 +543,25 @@ a {
 
 /* Contact Section */
 #contact {
+    /* background-color: #000; */
+    background: linear-gradient(to bottom, #00214c, #00000000);
+    
     padding: var(--sectionPadding);
+        /* margin: 10rem; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 3rem;
 }
 .sofwair-example {
     padding: var(--sectionPadding);
 }
 
 .contact {
+    /* margin: 10rem; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 3rem;
 }
 
@@ -557,8 +569,8 @@ a {
 /* Contact Section - Right Side */
 .contact-item-atas {
     color: rgb(255, 255, 255);
-    background-color: #0047746d;
-    padding: 0.7rem;
+    background-color: #0067a7;
+    padding: 1rem;
     display: flex;
     gap: 1.5rem;
     margin-bottom: 2.5rem;
@@ -576,10 +588,19 @@ a {
     border-bottom: 5px solid rgb(255, 255, 255);
     border-radius: 1rem;
     box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.276);
+}
+.contact-item:hover {
+    background-color: #ffffff;
+
+    border-bottom: 5px solid rgb(0, 13, 255);
+
+    box-shadow: 1px 1px 50px rgb(0, 81, 255);
 
 }
 
 .contact-item-icon {
+    cursor: pointer;
+    background-color: #003067ce;
     /* padding: 0.8rem 1rem; */
     width: 53px;
     height: 53px;
@@ -588,9 +609,16 @@ a {
     align-items: center;
     justify-content: center;
 }
+.contact-item-icon:hover {
+    background-color: #000059;
+}
+.contact-item-icon a:hover {
+    color: #ff0000;
+}
 
-.contact-item-icon svg {
-    fill: rgb(0, 162, 255);
+.contact-item-icon a {
+    color: white;
+    /* fill: rgb(0, 162, 255); */
 }
 
 .contact-item-detail h4 {
@@ -599,9 +627,23 @@ a {
 
 /* Footer Section */
 footer {
+    box-shadow: 0px -10px 10px rgba(0, 33, 108, 0.284);
+    color: white;
     padding: 4rem 0;
     text-align: center;
     
+}
+footer p{
+    font-size: 1.2rem;
+    padding: 1rem;
+    line-height: 2rem;
+    box-shadow: 0px -10px 10px rgba(0, 33, 108, 0.284);
+    
+}
+footer p span{
+    font-size: 1.3rem;
+    border-bottom: 2px solid white;
+    color: rgb(0, 225, 255);    
 }
 
 .footer-icons {
@@ -609,15 +651,18 @@ footer {
 }
 
 .footer-icons a {
+
+    padding: 1rem;
+
     margin: 0 0.5rem;
 }
 
 .footer-icons svg {
-    fill: #3e3f40;
+    fill: #ffffff;
 }
 
 .footer-icons a:hover svg {
-    fill: #000;
+    fill: #a9a9a9;
 }
 
 /* ============================== */
@@ -921,9 +966,10 @@ header {
 }
 
 @media (max-width: 920px) {
-    /* body{
-        background-color: #0068c3;
-    } */
+    body{
+        margin: 0%;
+        padding: 0;
+    }
     .contak {
         background-color: #FFBE88;
         color: #000;
@@ -933,7 +979,7 @@ header {
         background-color: #FFBE88;
         color: #000;
         display: block;
-        /* justify-content: space-between; */
+        justify-content: space-between;
         margin: 0 8%;
         padding: 4px;
         font-size: 12px;
@@ -1149,7 +1195,7 @@ header {
 }
 
 .bg-logo {
-    background: linear-gradient(to bottom, #00caed , #00829c);
+    background: linear-gradient(to bottom, #009eed , #003470);
 
     /* background: linear-gradient(45deg, #003d92, #00ff6a);  */
     /* background-image: url('../images/bg.png'); */
@@ -1160,7 +1206,8 @@ header {
 }
 
 .bg-logo-2 {
-    background: linear-gradient(to bottom, #00829c, #00000000);
+    
+    background: linear-gradient(to bottom,  #003470, #37000000);
 
     background-color: #00082c;
     /* border-bottom: 40px solid rgb(255, 255, 255); */
@@ -1169,10 +1216,12 @@ header {
     background-size: cover;
 }
 .pembatas{
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.161);
     background-color: #003ab7;
     padding: 1rem;
 }
 .pembatas-1{
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.161);
     background-color: #0051ff;
     padding: 1rem;
 }
