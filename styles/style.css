@@ -51,7 +51,7 @@
 }
 
 body {
-    background-color: #eeff00;
+    background-color: #003fb3;
     font-family: "Roboto", sans-serif;
     /* filter: brightness(50%) */
 }
@@ -548,7 +548,7 @@ a {
 
 .contact {
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: 1fr 1fr;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 3rem;
 }
@@ -921,9 +921,9 @@ header {
 }
 
 @media (max-width: 920px) {
-    body{
-        background-color: #d5ff3c;
-    }
+    /* body{
+        background-color: #0068c3;
+    } */
     .contak {
         background-color: #FFBE88;
         color: #000;
@@ -1149,7 +1149,7 @@ header {
 }
 
 .bg-logo {
-    background: linear-gradient(to bottom, #00ce78 , #00829c);
+    background: linear-gradient(to bottom, #00caed , #00829c);
 
     /* background: linear-gradient(45deg, #003d92, #00ff6a);  */
     /* background-image: url('../images/bg.png'); */
