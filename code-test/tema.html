@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SVG Storage</title>
+</head>
+<body>
+    <h1>SVG Storage</h1>
+
+    <div id="uploadForm" style="display:none;">
+        <label for="svgName">SVG Name:</label>
+        <input type="text" id="svgName" placeholder="Enter SVG Name">
+        <label for="svgCode">SVG Code:</label>
+        <textarea id="svgCode" placeholder="Paste SVG Code"></textarea>
+        <!-- Uncomment the following line if you want to manually add data -->
+        <!-- <button onclick="addSvg()">Add SVG</button> -->
+    </div>
+    <table id="svgTable">
+        <tr>
+            <th>Name</th>
+            <th>Shape</th>
+        </tr>
+        <tr>
+            <td>Circle</td>
+            <td><svg width="50" height="50"><circle cx="25" cy="25" r="20" fill="blue"/></svg></td>
+        </tr>
+        <!-- Add more rows as needed -->
+    </table>
+    <script>
+        
+    </script>
+</body>
+</html>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+</style>
