@@ -77,5 +77,41 @@ document.addEventListener("DOMContentLoaded", function () {
 // style 1-2
 // Menonaktifkan klik kanan pada halaman web
 document.addEventListener('contextmenu', function (e) {
-    e.preventDefault();
+  e.preventDefault();
+
+  var confirmation = confirm('Menu konteks dinonaktifkan! Klik "OK" untuk menghubungi kami melalui GitHub atau WhatsApp.');
+
+  if (confirmation) {
+    // Replace 'your-username' and 'your-whatsapp-number' with your actual GitHub username and WhatsApp number.
+    var githubLink = 'https://github.com/Nugraa21';
+    var whatsappLink = 'https://wa.me/your-whatsapp';
+
+    var userChoice = prompt('Pilih salah satu:\n1. GitHub\n2. WhatsApp');
+
+    if (userChoice === '1') {
+      window.location.href = githubLink;
+    } else if (userChoice === '2') {
+      window.location.href = whatsappLink;
+    } else {
+      alert('Pilihan tidak valid.');
+    }
+  }
+});
+// T
+
+document.addEventListener('selectstart', function (e) {
+  e.preventDefault();
+});
+
+
+// 
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Simulasi waktu loading
+  setTimeout(function () {
+      // Sembunyikan elemen loading
+      document.getElementById("loadingContainer").style.display = "none";
+      // Tampilkan elemen konten utama
+      document.getElementById("mainContent").style.display = "block";
+  }, 2000); // Ganti 2000 dengan waktu loading yang diinginkan dalam milidetik
 });

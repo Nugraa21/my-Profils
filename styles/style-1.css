@@ -67,35 +67,6 @@ body {
     /* filter: brightness(50%) */
 }
 
-.contak {
-    background-color: #FFBE88;
-    color: #000;
-}
-
-.contact-row {
-    background-color: #FFBE88;
-    color: #000;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 8%;
-    padding: 0.1rem;
-}
-
-.contak-1,
-.contak-2 {
-    color: #000;
-    font-weight: 600;
-}
-
-.contak-3 a {
-    color: white;
-    font-weight: 600;
-    padding: 0.2rem;
-}
-
-.contak-3 a:hover {
-    color: rgb(0, 181, 253);
-}
 
 
 /* h1,
@@ -979,10 +950,7 @@ header {
         margin: 0%;
         padding: 0;
     }
-    .contak {
-        background-color: #FFBE88;
-        color: #000;
-    }
+
 
     .contact-row {
         background-color: #FFBE88;
@@ -1324,4 +1292,88 @@ header {
     height: 100%;
     background: linear-gradient(to top , #ff0000 , #11ff00 );
     filter: blur(30px);
+}
+/* animasi loding */
+.loading-container {
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #020036; /* Warna merah gelap, Anda dapat mengganti nilainya sesuai keinginan */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.cube-loader {
+    padding: 1rem;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin: 1rem;
+}
+
+.cube {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #009dff;
+    border: 2px solid #2600ff;
+    animation: foldCube 2.4s infinite linear;
+}
+
+.cube1 {
+    background-color: #0088ff;
+    top: 0;
+    left: 0;
+    transform-origin: 100% 100%;
+    animation-delay: 0.3s;
+}
+
+.cube2 {
+    background-color: #00325a;
+
+    top: 0;
+    right: 0;
+    transform-origin: 0 100%;
+    animation-delay: 0.6s;
+}
+
+.cube3 {
+    background-color: #0080ff;
+
+    bottom: 0;
+    right: 0;
+    transform-origin: 0 0;
+    animation-delay: 0.9s;
+}
+
+.cube4 {
+    background-color: #003a90;
+
+    bottom: 0;
+    left: 0;
+    transform-origin: 100% 0;
+    animation-delay: 1s;
+}
+
+@keyframes foldCube {
+    0%, 10% {
+        transform: perspective(140px) rotateX(-180deg);
+        opacity: 0;
+    }
+    25%, 75% {
+        transform: perspective(140px) rotateX(0deg);
+        opacity: 1;
+    }
+    90%, 100% {
+        transform: perspective(140px) rotateY(180deg);
+        opacity: 0;
+    }
 }
