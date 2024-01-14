@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#pilihBahasa {
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Situs Web Multibahasa</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="judul">Selamat datang</h1>
+        
+        <label for="pilihBahasa">Pilih Bahasa:</label>
+        <select id="pilihBahasa" onchange="ubahBahasa()">
+            <option value="id">Bahasa Indonesia</option>
+            <option value="en">English</option>
+            <option value="jp">日本語 (Japanese)</option>
+        </select>
+    </div>
+
+    <script>
+function ubahBahasa() {
+    var pilihanBahasa = document.getElementById("pilihBahasa").value;
+
+    if (pilihanBahasa === "id") {
+        document.getElementById("judul").innerHTML = "Selamat datang";
+    } else if (pilihanBahasa === "en") {
+        document.getElementById("judul").innerHTML = "Welcome";
+    } else if (pilihanBahasa === "jp") {
+        document.getElementById("judul").innerHTML = "ようこそ";
+    }
+}
+
+    </script>
+</body>
+</html>

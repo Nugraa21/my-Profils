@@ -113,5 +113,5 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("loadingContainer").style.display = "none";
       // Tampilkan elemen konten utama
       document.getElementById("mainContent").style.display = "block";
-  }, 2000); // Ganti 2000 dengan waktu loading yang diinginkan dalam milidetik
+  }, 1); // Ganti 2000 dengan waktu loading yang diinginkan dalam milidetik
 });
