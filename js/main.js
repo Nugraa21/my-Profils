@@ -1,3 +1,11 @@
+//---------------------------------------//
+// 
+//
+//
+//
+//
+//---------------------------------------//
+
 // // Toggle & Responsive Navigation
 // const navSlide = () => {
 //   const burger = document.querySelector(".burger");
@@ -39,19 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-            window.addEventListener('scroll', function () {
-                var header = document.getElementById('navigasi');
-                var scrollPosition = window.scrollY;
-
-                if (scrollPosition > 100) {
-                    header.style.backgroundColor = ' #ff0051';
-                    // header.style.backgroundColor = '#60b5df44'; // sebelum
-                } else {
-                     header.style.backgroundColor = ' #00000000';
-                    // header.style.backgroundColor = '#60b4df'; // sesudah 
-                }
-            });
-
 // Animasi ------------------------------ Animasi
         document.addEventListener("DOMContentLoaded", function () {
             showPopup();
@@ -80,3 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // style 1-2
+// Menonaktifkan klik kanan pada halaman web
+// document.addEventListener('contextmenu', function (e) {
+//     e.preventDefault();
+// });

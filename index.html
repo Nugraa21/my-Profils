@@ -28,7 +28,20 @@
         <!-- --------------------------------------------------- -->
         <!-- 010101010101010101010101010101010101010101010101010 -->
     <!-- -------------------- Header awal -------------------- -->
+        <script>
+            window.addEventListener('scroll', function () {
+                var header = document.getElementById('navigasi');
+                var scrollPosition = window.scrollY;
 
+                if (scrollPosition > 100) {
+                    header.style.backgroundColor = ' #ff0051';
+                    // header.style.backgroundColor = '#60b5df44'; // sebelum
+                } else {
+                     header.style.backgroundColor = ' #00000000';
+                    // header.style.backgroundColor = '#60b4df'; // sesudah 
+                }
+            });
+        </script>
         <header id="navigasi">
             <div class="container">
                 <input type="checkbox" name="" id="check">
