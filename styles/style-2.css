@@ -67,35 +67,6 @@ body {
     /* filter: brightness(50%) */
 }
 
-.contak {
-    background-color: #ff8888;
-    color: #000;
-}
-
-.contact-row {
-    background-color: #ff8888;
-    color: #000;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 8%;
-    padding: 0.1rem;
-}
-
-.contak-1,
-.contak-2 {
-    color: #000;
-    font-weight: 600;
-}
-
-.contak-3 a {
-    color: white;
-    font-weight: 600;
-    padding: 0.2rem;
-}
-
-.contak-3 a:hover {
-    color: rgb(253, 0, 0);
-}
 
 
 /* h1,
@@ -979,10 +950,7 @@ header {
         margin: 0%;
         padding: 0;
     }
-    .contak {
-        background-color: #FFBE88;
-        color: #000;
-    }
+
 
     .contact-row {
         background-color: #FFBE88;
