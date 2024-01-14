@@ -76,6 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // style 1-2
 // Menonaktifkan klik kanan pada halaman web
-// document.addEventListener('contextmenu', function (e) {
-//     e.preventDefault();
-// });
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
