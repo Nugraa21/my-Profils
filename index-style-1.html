@@ -21,20 +21,20 @@
         <!-- --------------------------------------------------- -->
         <!-- 010101010101010101010101010101010101010101010101010 -->
     <!-- -------------------- Header awal -------------------- -->
-    <script>
-        window.addEventListener('scroll', function () {
-            var header = document.getElementById('navigasi');
-            var scrollPosition = window.scrollY;
+        <script>
+            window.addEventListener('scroll', function () {
+                var header = document.getElementById('navigasi');
+                var scrollPosition = window.scrollY;
 
-            if (scrollPosition > 100) {
-                header.style.backgroundColor = '#009eed';
-                // header.style.backgroundColor = '#60b5df44'; // sebelum
-            } else {
-                 header.style.backgroundColor = ' #00000000';
-                // header.style.backgroundColor = '#60b4df'; // sesudah 
-            }
-        });
-    </script>
+                if (scrollPosition > 100) {
+                    header.style.backgroundColor = '  #00aeff';
+                    // header.style.backgroundColor = '#60b5df44'; // sebelum
+                } else {
+                     header.style.backgroundColor = ' #00000000';
+                    // header.style.backgroundColor = '#60b4df'; // sesudah 
+                }
+            });
+        </script>
         <header id="navigasi">
             <div class="container">
                 <input type="checkbox" name="" id="check">
@@ -736,14 +736,14 @@
     <!--  -->
 <div id="scrollpath"></div>
     <!--  -->
-    <div class="loading-container" id="loadingContainer">
-        <div class="cube-loader">
-            <div class="cube cube1"></div>
-            <div class="cube cube2"></div>
-            <div class="cube cube3"></div>
-            <div class="cube cube4"></div>
+        <div class="loading-container" id="loadingContainer">
+            <div class="cube-loader">
+                <div class="cube cube1"></div>
+                <div class="cube cube2"></div>
+                <div class="cube cube3"></div>
+                <div class="cube cube4"></div>
+            </div>
+            <p>Tunggu sebentar yah...</p>
         </div>
-        <p>Tunggu sebentar yah...</p>
-    </div>
 </body>
 </html>
