@@ -1302,14 +1302,14 @@ header {
 }
 /* animasi loding */
 .loading-container {
-    color: white;
+    color: rgb(147, 232, 255);
     text-align: center;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #020036; /* Warna merah gelap, Anda dapat mengganti nilainya sesuai keinginan */
+    background-color: #00084e; /* Warna merah gelap, Anda dapat mengganti nilainya sesuai keinginan */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1318,69 +1318,72 @@ header {
 }
 
 .cube-loader {
+    border: 4px solid rgb(0, 47, 202);
     padding: 1rem;
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin: auto;
     margin: 1rem;
 }
 
 .cube {
+    box-shadow: 0px 0px 10px #00000069;
+    margin: -10px;
     position: absolute;
     width: 50%;
     height: 50%;
-    background-color: #009dff;
-    border: 2px solid #2600ff;
-    animation: foldCube 2.4s infinite linear;
+    background-color: #006aff;
+    border: 2px solid #5900ff;
+    animation: foldCube 1s infinite linear;
 }
 
 .cube1 {
-    background-color: #0088ff;
+    background-color: #003cff;
     top: 0;
     left: 0;
-    transform-origin: 100% 100%;
+    /* transform-origin: 100% 100%; */
     animation-delay: 0.3s;
 }
 
 .cube2 {
-    background-color: #00325a;
+    background-color: #18005a;
 
     top: 0;
     right: 0;
-    transform-origin: 0 100%;
+    /* transform-origin: 0 100%; */
     animation-delay: 0.6s;
 }
 
 .cube3 {
-    background-color: #0080ff;
+    background-color: #0037ff;
 
     bottom: 0;
     right: 0;
-    transform-origin: 0 0;
+    /* transform-origin: 0 0; */
     animation-delay: 0.9s;
 }
 
 .cube4 {
-    background-color: #003a90;
+    background-color: #480090;
 
     bottom: 0;
     left: 0;
-    transform-origin: 100% 0;
-    animation-delay: 1s;
+    /* transform-origin: 100% 0; */
+    animation-delay: 1.2s;
 }
 
 @keyframes foldCube {
     0%, 10% {
-        transform: perspective(140px) rotateX(-180deg);
+        transform: perspective(200px) rotateY(-40deg);
         opacity: 0;
     }
     25%, 75% {
-        transform: perspective(140px) rotateX(0deg);
+        transform: perspective(200px) rotateY(0deg);
         opacity: 1;
     }
     90%, 100% {
-        transform: perspective(140px) rotateY(180deg);
+        transform: perspective(200px) rotateX(200deg);
         opacity: 0;
     }
 }
