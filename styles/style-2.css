@@ -368,7 +368,7 @@ a {
     overflow: hidden;
     /* supaya gambar yang diatas itu dia ngikut border radiusnya, karena yang dikasih border radius disini adalah div portfolio ini */
     border: 2px solid #fff;
-    background-color: #ff00c363;
+    background-color: #ff00409c;
     backdrop-filter: blur(10px);
     box-shadow: 0px 4px 10px rgba(80, 0, 0, 0.459);
 }
