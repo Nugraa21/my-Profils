@@ -8,6 +8,28 @@
 /*                                                */
 /*                                                */
 /* ---------------------------------------------- */
+/* 
+border: 1px solid #000;
+
+border: 1px dotted #000;
+
+border: 1px dashed #000;
+
+border: 2px double #000;
+
+border: 2px groove #000;
+
+border: 2px ridge #000;
+
+border: 2px inset #000;
+
+border: 2px outset #000;
+
+border-radius: 5px;
+
+border-radius: 10px 5px 15px 20px;
+
+*/
 @media screen and (max-width: 1000px) {
     p {
         font-size: 0.9rem;

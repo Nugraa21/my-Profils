@@ -233,7 +233,22 @@ a {
 }
 
 .hero-right img {
-    width: 60%;
+    width: 80%;
+    /* mix-blend-mode: darken; */
+    mix-blend-mode: multiply;
+    /* mix-blend-mode: difference; */
+    /* mix-blend-mode: screen; */
+    /* mix-blend-mode: screen; */
+    filter: 
+    brightness(10) ,
+    invert(1) ,
+    contrast(10) ,
+    grayscale(-100) ,
+    saturate(5) ,
+    sepia(0.6) ,
+    hue-rotate(60deg) ,
+    blur(7775px) 
+    ;
 }
 
 .hero-right {

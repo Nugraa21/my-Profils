@@ -1,65 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>SVG Storage</title>
+    <style>
+        body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, red 25%, yellow 25%, yellow 50%, red 50%, red 75%, yellow 75%);
+  background-size: 20px 20px;
+}
+
+.container {
+  text-align: center;
+  color: white;
+}
+
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Background</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>SVG Storage</h1>
-
-    <div id="uploadForm" style="display:none;">
-        <label for="svgName">SVG Name:</label>
-        <input type="text" id="svgName" placeholder="Enter SVG Name">
-        <label for="svgCode">SVG Code:</label>
-        <textarea id="svgCode" placeholder="Paste SVG Code"></textarea>
-        <!-- Uncomment the following line if you want to manually add data -->
-        <!-- <button onclick="addSvg()">Add SVG</button> -->
-    </div>
-    <table id="svgTable">
-        <tr>
-            <th>Name</th>
-            <th>Shape</th>
-        </tr>
-        <tr>
-            <td>Circle</td>
-            <td><svg width="50" height="50"><circle cx="25" cy="25" r="20" fill="blue"/></svg></td>
-        </tr>
-        <!-- Add more rows as needed -->
-    </table>
-    <script>
-        
-    </script>
+  <div class="container">
+    <h1>Welcome to Pixel Background</h1>
+    <p>This is a sample website with a red-yellow pixel background.</p>
+  </div>
 </body>
 </html>
-<style>
-    body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-}
-
-h1 {
-    text-align: center;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
-</style>
