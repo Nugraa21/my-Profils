@@ -108,8 +108,27 @@ document.addEventListener('selectstart', function (e) {
   e.preventDefault();
 });
 
+document.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+});
 
-
+document.addEventListener('keydown', function (e) {
+  // Cegah menggunakan kombinasi keyboard untuk membuka developer tools
+  if (e.key === 'F12' || (e.key === 'Shift' && e.key === 'Ctrl' && e.key === 'I')) {
+    e.preventDefault();
+  }
+});
+    // Mencegah drop gambar
+    document.addEventListener('drop', function (e) {
+      e.preventDefault();
+    });
+        // Menyembunyikan gambar saat diambil dari sumber lain
+        document.addEventListener('dragstart', function (e) {
+          if (e.target.tagName.toLowerCase() === 'img') {
+            e.preventDefault();
+          }
+        });
+    
 
 // -------------------------------- Animasi loading -------------------------------- //
 
@@ -123,3 +142,4 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("mainContent").style.display = "block";
   }, 2000 ); // Ganti 2000 dengan waktu loading yang diinginkan dalam milidetik
 });
+
