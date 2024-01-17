@@ -235,11 +235,11 @@ a {
 .hero-right img {
     width: 80%;
     /* mix-blend-mode: darken; */
-    mix-blend-mode: multiply;
+    /* mix-blend-mode: multiply; */
     /* mix-blend-mode: difference; */
     /* mix-blend-mode: screen; */
     /* mix-blend-mode: screen; */
-    filter: 
+    /* filter: 
     brightness(10) ,
     invert(1) ,
     contrast(10) ,
@@ -248,7 +248,7 @@ a {
     sepia(0.6) ,
     hue-rotate(60deg) ,
     blur(7775px) 
-    ;
+    ; */
 }
 
 .hero-right {
@@ -1196,19 +1196,19 @@ header {
 }
 
 .bg-logo {
-    background: linear-gradient(to bottom, #009eed , #003470);
+    /* background: linear-gradient(to bottom, #009eed , #003470); */
 
     /* background: linear-gradient(45deg, #003d92, #00ff6a);  */
     /* background-image: url('../images/bg.png'); */
     background-size: cover;
-    background-color: #00082c;
+    background-color: #008CFF;
 
     /* border-bottom: 40px solid rgba(255, 255, 255); */
 }
 
 .bg-logo-2 {
     
-    background: linear-gradient(to bottom,  #003470, #37000000);
+    background: linear-gradient(to bottom, #008CFF, #ffffff00);
 
     background-color: #00082c;
     /* border-bottom: 40px solid rgb(255, 255, 255); */
