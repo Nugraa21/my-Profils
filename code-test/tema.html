@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menampilkan Web di Dalam Web</title>
     <style>
         body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(45deg, red 25%, yellow 25%, yellow 50%, red 50%, red 75%, yellow 75%);
-  background-size: 20px 20px;
-}
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
 
-.container {
-  text-align: center;
-  color: white;
-}
+        h1 {
+            text-align: center;
+        }
 
+        #webContainer {
+            width: 100%;
+            max-width: 800px; /* Sesuaikan maksimum lebar iframe */
+            margin: 0 auto; /* Pusatkan iframe di halaman */
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px; /* Sesuaikan tinggi iframe */
+            border: 1px solid #ccc; /* Tambahkan border untuk efek estetika */
+        }
     </style>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pixel Background</title>
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to Pixel Background</h1>
-    <p>This is a sample website with a red-yellow pixel background.</p>
-  </div>
+
+    <h1>Halaman Utama</h1>
+
+    <!-- Container untuk iframe -->
+    <div id="webContainer">
+        <!-- iframe untuk menyematkan halaman web lain -->
+        <iframe src="../" frameborder="0"></iframe>
+    </div>
+
 </body>
 </html>
