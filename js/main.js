@@ -1,9 +1,9 @@
 //---------------------------------------//
-// 
-//
-//
-//
-//
+//                                       //
+//                                       //
+//  Java Scripts   @Nugra21.github.io    //
+//                                       //
+//                                       //
 //---------------------------------------//
 
 // // Toggle & Responsive Navigation
@@ -26,6 +26,10 @@
 //     form.reset();
 //   }
 // };
+
+
+//------------------------  Scrol up
+
 document.addEventListener("DOMContentLoaded", function () {
   var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
@@ -49,30 +53,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Animasi ------------------------------ Animasi
 
-        document.addEventListener("DOMContentLoaded", function () {
-            showPopup();
-        });
+document.addEventListener("DOMContentLoaded", function () {
+  showPopup();
+  });
 
-        function showPopup() {
-            var popupContainer = document.getElementById("popup-container");
-            popupContainer.style.visibility = "visible";
-        }
+function showPopup() {
+  var popupContainer = document.getElementById("popup-container");
+  popupContainer.style.visibility = "visible";
+}
 
-        function closePopup() {
-            var popupContainer = document.getElementById("popup-container");
-            popupContainer.style.visibility = "hidden";
-        }
+function closePopup() {
+  var popupContainer = document.getElementById("popup-container");
+  popupContainer.style.visibility = "hidden";
+}
 
-        //  progresbar
-        document.addEventListener('DOMContentLoaded', function () {
-          let progress = document.getElementById('progresbar'); // Fixed the method name and added 'getElementById'
+//  progresbar
+document.addEventListener('DOMContentLoaded', function () {
+  let progress = document.getElementById('progresbar'); // Fixed the method name and added 'getElementById'
 
-          let totalHeight = document.body.scrollHeight - window.innerHeight;
-          window.onscroll = function(){
-              let progressHeight = (window.pageYOffset / totalHeight) * 100;
-              progress.style.height = progressHeight + "%";
-          };
-      });
+  let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+      let progressHeight = (window.pageYOffset / totalHeight) * 100;
+      progress.style.height = progressHeight + "%";
+      };
+});
 
 
 
@@ -140,6 +144,6 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("loadingContainer").style.display = "none";
       // Tampilkan elemen konten utama
       document.getElementById("mainContent").style.display = "block";
-  }, 000 ); // Ganti 2000 dengan waktu loading yang diinginkan dalam milidetik
+  }, 2000 ); // Ganti 2000 dengan waktu loading yang diinginkan dalam milidetik
 });
 
