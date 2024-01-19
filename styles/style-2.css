@@ -628,6 +628,55 @@ a {
 .contact-item-detail h4 {
     margin-bottom: 0.6rem;
 }
+#contact-form-1{
+    background: linear-gradient(to top , #8a0000 , #b00000 );
+}
+.contact-form div {
+    margin-bottom: 1.4rem;
+    text-align: center;
+
+}
+.contact-form div h1 {
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
+    margin-bottom: 1.4rem;
+    padding: 1rem;
+    color: white;
+    border-bottom: 2px solid rgb(183, 0, 0);
+
+}
+
+.contact-form div input[type=text],
+.contact-form div input[type=email],
+.contact-form div textarea
+ {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(90, 0, 0);
+    width: 70%;
+    padding: 0.75rem 1.3rem;
+    font-family: "Roboto", sans-serif;
+    background-color: #ffd0d0;
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(194, 0, 0);
+    resize: none;
+}
+
+.contact-form div input[type=submit]
+ {
+    /* width: 100%; */
+    padding: 0.75rem 1.3rem;
+    background-color: red;
+    border: 2px solid rgb(155, 0, 0);
+    color: #ffffff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.contact-form div input[type=submit]:hover
+ {
+    background-color: rgb(180, 0, 0);
+    border: 2px solid rgb(255, 0, 0);
+}
+
 
 /* Footer Section */
 footer {
@@ -970,6 +1019,7 @@ header {
 }
 
 @media (max-width: 920px) {
+    
     body{
         margin: 0%;
         padding: 0;
@@ -986,8 +1036,13 @@ header {
         font-size: 12px;
     }
 
-
-
+    .contact-form div input[type=text],
+    .contact-form div input[type=email],
+    .contact-form div textarea
+     {
+        width: 100%;
+    }
+    
 
     .hamburger-menu-container {
         display: flex;

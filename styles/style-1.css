@@ -628,6 +628,55 @@ a {
 .contact-item-detail h4 {
     margin-bottom: 0.6rem;
 }
+#contact-form-1{
+    background: linear-gradient(to top , #000063 , #004aa4 );
+}
+.contact-form div {
+    margin-bottom: 1.4rem;
+    text-align: center;
+
+}
+.contact-form div h1 {
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
+    margin-bottom: 1.4rem;
+    padding: 1rem;
+    color: white;
+    border-bottom: 2px solid rgb(0, 104, 183);
+
+}
+
+.contact-form div input[type=text],
+.contact-form div input[type=email],
+.contact-form div textarea
+ {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0, 33, 90);
+    width: 70%;
+    padding: 0.75rem 1.3rem;
+    font-family: "Roboto", sans-serif;
+    background-color: #ffd0d0;
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(0, 129, 194);
+    resize: none;
+}
+
+.contact-form div input[type=submit]
+ {
+    /* width: 100%; */
+    padding: 0.75rem 1.3rem;
+    background-color: rgb(0, 166, 255);
+    border: 2px solid rgb(0, 85, 155);
+    color: #ffffff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.contact-form div input[type=submit]:hover
+ {
+    background-color: rgb(0, 75, 180);
+    border: 2px solid rgb(0, 200, 255);
+}
+
 
 /* Footer Section */
 footer {
@@ -986,7 +1035,13 @@ header {
         font-size: 12px;
     }
 
-
+    .contact-form div input[type=text],
+    .contact-form div input[type=email],
+    .contact-form div textarea
+     {
+        width: 100%;
+    }
+    
 
 
     .hamburger-menu-container {
